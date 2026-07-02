@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercury's Arts | Home</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <a href="./index.html" class="logo-link">
+            <img src="./img/LOGO-merc.png" alt="Mercury's Arts Logo" class="site-logo">
+            <span class="logo-text">Mercury's <span class="logo-highlight">Arts</span></span>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="site-nav" id="site-nav">
+            <a href="./index.html" class="active">Home</a>
+            <a href="./shop.html">Shop</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+        <div class="nav-icons">
+            <div class="cart-icon" id="cart-btn">
+                <i class="fas fa-shopping-bag"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Handcrafted Bracelets</h1>
+            <p>Add a touch of charm to your wrist with our exclusive, limited-edition collections.</p>
+            <a href="./shop.html" class="btn">Shop Collection</a>
+        </div>
+    </section>
+
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <i class="fas fa-times" id="close-cart"></i>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <p class="empty-msg">Your cart is currently empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="total-price">Total: <span id="cart-total">0.00 ₾</span></div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <section class="products-section">
+        <h2>Our Featured Collection</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="./img/download.jpg" alt="Classic Bracelet">
+                </div>
+                <h3>Classic(3x)</h3>
+                <div class="price">14.99 ₾</div>
+                <button class="add-to-cart-btn" data-id="home-1" data-name="Classic" data-price="14.99">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="./img/download (1).jpg" alt="Blush Crystal Charm">
+                </div>
+                <h3>Knot Bracelet</h3>
+                <div class="price">9.99 ₾</div>
+                <button class="add-to-cart-btn" data-id="home-2" data-name="Knot Bracelet" data-price="9.99">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="./img/download (2).jpg" alt="Sakura Minimalist">
+                </div>
+                <h3>Royal Blue</h3>
+                <div class="price">7.99 ₾</div>
+                <button class="add-to-cart-btn" data-id="home-3" data-name="Royal Blue" data-price="7.99">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="./img/download (3).jpg" alt="Pastel Beaded Deluxe">
+                </div>
+                <h3>Cherry Blossom</h3>
+                <div class="price">13.99 ₾</div>
+                <button class="add-to-cart-btn" data-id="home-4" data-name="Cherry Blossom" data-price="13.99">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Mercury's Arts Bracelets. All Rights Reserved. Follow us on Instagram: <a href="https://www.instagram.com/mercurys__arts/" target="_blank" rel="noopener">instagram.com/mercurys__arts/</a>.</p>
+    </footer>
+
+    <div class="cookie-popup" id="cookie-popup">
+        <p>Cookies Policy</p>
+        <div class="cookie-actions">
+            <button class="cookie-btn accept">Accept</button>
+            <button class="cookie-btn decline">Decline</button>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
